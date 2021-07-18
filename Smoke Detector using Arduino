@@ -1,0 +1,51 @@
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+const int led=A1;
+int smoke=0;
+const int sensor=A0;
+const int buzzer=6;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(buzzer, OUTPUT);
+  pinMode(sensor, INPUT);
+  Serial.begin(9600);
+  lcd.begin(16, 2);
+  lcd.setCursor(4, 0);
+  lcd.print("SPOORTHY");
+  lcd.setCursor(4, 1);
+  lcd.print("PROJECTS");
+  delay(800);
+  lcd.clear();
+  lcd.setCursor(4, 0);
+  lcd.print("PROJECT");
+  lcd.setCursor(1, 1);
+  lcd.print("Smoke detector");
+  delay(800);
+  lcd.clear();  
+}
+
+void loop()
+{
+  float sensorvalue;
+  sensorvalue=analogRead(sensor);
+  lcd.setCursor(5, 0);
+  lcd.print("SMOKE");
+  if(sensorvalue>=300)
+  {
+    analogWrite(led,255);
+    digitalWrite(buzzer, HIGH);
+    lcd.setCursor(3, 1);
+    lcd.print("DECTECTED");
+    delay(500);
+  }
+  else
+  {
+    analogWrite(led,0);
+    digitalWrite(buzzer, LOW);
+    lcd.setCursor(1, 1);    
+    lcd.print("NOT  DECTECTED");
+    delay(500);
+  }
+  lcd.clear();
+}
