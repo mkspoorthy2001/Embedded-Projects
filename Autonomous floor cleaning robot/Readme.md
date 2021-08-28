@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on challenging embedded system projects
 - 📫 How to reach me mkspoorthy@gmail.com
 
-Youtube link : 
+Youtube link : https://youtu.be/cIbXawRZF4o
 
 <!---
 spoorthymk/spoorthymk is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
