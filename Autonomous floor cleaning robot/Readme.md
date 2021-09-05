@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @mkspoorthy2001
 - 👀 I’m interested in IoT and embedded system designing
-- 🌱 I’m currently learning API for arduino projects
+- 🌱 I’m currently learning API for arduino projects and machine learning
 - 💞️ I’m looking to collaborate on challenging embedded system projects
 - 📫 How to reach me mkspoorthy@gmail.com
 
