@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Spoorthy M K
+- 👋 Hi, I’m @mkspoorthy2001
 - 👀 I’m interested in IoT and embedded system designing
 - 🌱 I’m currently learning API for arduino projects
 - 💞️ I’m looking to collaborate on challenging embedded system projects
